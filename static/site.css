@@ -427,9 +427,7 @@ dialog::backdrop { background: rgba(14, 17, 22, .48); -webkit-backdrop-filter: b
 .steps h3 { font-size: 19px; margin-bottom: 8px; }
 .steps p { color: var(--muted); font-size: 15px; }
 .service-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 24px; align-items: stretch; }
-.service-card { position: relative; overflow: hidden; background: var(--dark); color: #fff; border-radius: var(--r-xl); padding: 40px; }
-.service-card::before { content: ""; position: absolute; width: 420px; height: 420px; right: -160px; top: -180px; border-radius: 50%; background: radial-gradient(circle, rgba(51, 85, 255, .55), rgba(51, 85, 255, 0) 70%); }
-.service-card > * { position: relative; }
+.service-card { background: var(--dark); color: #fff; border-radius: var(--r-xl); padding: 40px; }
 .service-card .kicker { color: var(--lamp); }
 .service-card h2 { font-size: clamp(28px, 3vw, 40px); letter-spacing: -.03em; }
 .service-price { font-family: var(--font-display); font-size: clamp(28px, 3vw, 38px); font-weight: 600; margin: 12px 0 22px; letter-spacing: -.03em; }
@@ -462,9 +460,7 @@ dialog::backdrop { background: rgba(14, 17, 22, .48); -webkit-backdrop-filter: b
 .faq details p { color: var(--ink-2); padding: 0 0 20px; max-width: 720px; }
 
 /* Заявка на тёмном фоне */
-.cta-band { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; align-items: center; padding: 48px; border-radius: var(--r-xl); background: var(--dark); color: #fff; position: relative; overflow: hidden; }
-.cta-band::before { content: ""; position: absolute; width: 560px; height: 560px; left: -220px; bottom: -320px; border-radius: 50%; background: radial-gradient(circle, rgba(51, 85, 255, .5), rgba(51, 85, 255, 0) 70%); }
-.cta-band > * { position: relative; }
+.cta-band { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; align-items: center; padding: 48px; border-radius: var(--r-xl); background: var(--dark); color: #fff; }
 .cta-band .kicker { color: var(--lamp); }
 .cta-band h2 { font-size: clamp(28px, 3.4vw, 42px); letter-spacing: -.03em; }
 .cta-text > p:not(.kicker) { color: rgba(255, 255, 255, .72); margin-top: 14px; font-size: 17px; max-width: 520px; }
